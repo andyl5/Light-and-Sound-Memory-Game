@@ -21,10 +21,12 @@ function startGame() {
     
     // https://www.w3schools.com/js/js_loop_for.asp
     for (let i = 0; i < 8; i++){
-        var randomSequence = getRandomInt(1, 5);
+        // https://stackoverflow.com/questions/12237529/count-how-many-elements-in-a-div
+        var randomSequence = getRandomInt(1, document.getElementById("gameButtonArea").childElementCount +1);
         // https://www.w3schools.com/jsref/jsref_push.asp
         pattern.push(randomSequence);
     }
+    console.log(pattern)
     playClueSequence()
 }
 
@@ -36,10 +38,10 @@ function stopGame() {
 
 // Sound Synthesis Functions
 const freqMap = {
-    1: 261.6,
-    2: 329.6,
-    3: 392,
-    4: 466.2
+    1: 150,
+    2: 200,
+    3: 300,
+    4: 360
   }
 function playTone(btn,len){ 
     o.frequency.value = freqMap[btn]
