@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 * [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [ ] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
-* [ ] Computer picks a different pattern each time the game is played
+* [x] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
@@ -46,10 +46,15 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+https://www.w3schools.com/js/
+https://www.w3schools.com/js/js_loop_for.asp
+https://www.youtube.com/watch?v=s9wW2PpJsmQ
+https://www.w3schools.com/jsref/jsref_push.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+https://stackoverflow.com/questions/12237529/count-how-many-elements-in-a-div
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+One challenge I encountered in creating this submission was familiarizing myself with JavaScript’s syntax and built-in methods. I come from a Python background where code is visually neater because there are fewer syntactical rules to keep track of. Often I would forget to enclose a function or statements with {}, wondering why my code was not working properly. Although optional, I also forgot to add ; at the end of my lines of code. When I was trying to add the random pattern feature that would pick a random button as the next sequence, I expected JavaScript to have a built-in function that returns an integer within a range, but it didn’t so I referred to the official Javascript documentation where it showed me exactly how to code it. Another challenge I encountered when building this feature was implementing a for loop to assign all 8 sequences randomly. After searching the correct syntax to create a for loop, I learned that in JavaScript, there are 3 expressions you must declare: an initial expression, a condition and an incremental expression. While these situations initially proved to be a challenge, I used W3schools and Stack Overflow to familiarize myself with the proper syntax and rules of JavaScript. As a result, I successfully implemented the features I wanted to while also building upon my previous knowledge of JavaScript.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
