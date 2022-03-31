@@ -4,7 +4,6 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 // Global Variables
-var pattern = [2,2,4,3,2,1,2,4];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -13,11 +12,19 @@ var guessCounter = 0
 
 function startGame() {
     // initialize game variables
+    pattern = []
     progress = 0;
     gamePlaying = true
     // swap the Start and Stop buttons
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
+    
+    // https://www.w3schools.com/js/js_loop_for.asp
+    for (let i = 0; i < 8; i++){
+        var random_sequence = getRandomInt(1, 5)
+        // https://www.w3schools.com/jsref/jsref_push.asp
+        pattern.push(random_sequence)
+    }
     playClueSequence()
 }
 
@@ -119,6 +126,13 @@ function guess(btn){
     // gameover: lose
     loseGame()
     }
+}
+
+function getRandomInt(min, max){
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    console.log(Math.floor(Math.random() * (max-min) + min))
+    return Math.floor(Math.random() * (max-min) + min);
 }
 
 // Page Initialization
