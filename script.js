@@ -21,9 +21,9 @@ function startGame() {
     
     // https://www.w3schools.com/js/js_loop_for.asp
     for (let i = 0; i < 8; i++){
-        var random_sequence = getRandomInt(1, 5)
+        var randomSequence = getRandomInt(1, 5)
         // https://www.w3schools.com/jsref/jsref_push.asp
-        pattern.push(random_sequence)
+        pattern.push(randomSequence)
     }
     playClueSequence()
 }
@@ -86,7 +86,7 @@ function playClueSequence(){
     for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
       console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
       setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-      delay += clueHoldTime 
+      delay += clueHoldTime
       delay += cluePauseTime;
     }
   }
