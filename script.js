@@ -21,9 +21,9 @@ function startGame() {
     
     // https://www.w3schools.com/js/js_loop_for.asp
     for (let i = 0; i < 8; i++){
-        var randomSequence = getRandomInt(1, 5)
+        var randomSequence = getRandomInt(1, 5);
         // https://www.w3schools.com/jsref/jsref_push.asp
-        pattern.push(randomSequence)
+        pattern.push(randomSequence);
     }
     playClueSequence()
 }
@@ -129,8 +129,8 @@ function guess(btn){
 }
 
 function getRandomInt(min, max){
-    min = Math.ceil(min)
-    max = Math.floor(max)
+    min = Math.ceil(min);
+    max = Math.floor(max);
     console.log(Math.floor(Math.random() * (max-min) + min))
     return Math.floor(Math.random() * (max-min) + min);
 }
